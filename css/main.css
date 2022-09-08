@@ -148,13 +148,6 @@ body {
   line-height: 44px;
 }
 
-/* Slider*/
-
-.slider {
-}
-.slider__item {
-}
-
 /* slide */
 
 .slide {
@@ -191,14 +184,11 @@ body {
   max-width: 1070px;
   margin-bottom: 12px;
 }
-.title {
-}
+
 .about__text {
   max-width: 1070px;
   margin-bottom: 78px;
   font-size: 28px;
-}
-.video__content {
 }
 
 /* video*/
@@ -243,6 +233,12 @@ body {
   line-height: 36px;
   color: rgba(31, 31, 31, 0.7);
 }
+.footer a {
+  letter-spacing: 0.04em;
+  font-size: 20px;
+  line-height: 36px;
+  color: rgba(31, 31, 31, 0.7);
+}
 .footer__row {
   display: flex;
   justify-content: space-between;
@@ -252,7 +248,8 @@ body {
   display: flex;
   column-gap: 104px;
 }
-.footer__email {
-}
+
 .footer__socials {
+  display: flex;
+  column-gap: 26px;
 }

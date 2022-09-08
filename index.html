@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invoriem - html</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/fonts/Gilroy/stylesheet.css" />
     <link
       rel="stylesheet"
@@ -23,7 +24,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header none">
       <div class="container">
         <div class="header__top">
           <nav class="nav">
@@ -34,6 +35,10 @@
               <li><a href="#!" class="link">About us</a></li>
               <li><a href="#!" class="btn"> Let's Talk</a></li>
             </ul>
+
+            <button class="nav__btn">
+              <img src="./img/header/mobile-nav-btn.svg" alt="mobile nav" />
+            </button>
           </nav>
         </div>
 
@@ -49,10 +54,27 @@
             <a href="#!" class="btn btn--big btn--dark"> Let's Talk</a>
           </div>
         </div>
+
+        <div class="header__content-mobile">
+          <img
+            src="./img/logo.svg"
+            alt="inoverm project"
+            class="header__logo-mobile"
+          />
+          <div class="header__content-mobile-text">
+            <p>
+              We fulfill international<br />
+              property developments
+            </p>
+          </div>
+        </div>
+        <a href="#main" class="header__arrows">
+          <img src="./img/header/header-arrows.SVG" alt="scroll down" />
+        </a>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="case-studies">
         <div class="container">
           <div class="case-studies__title">
@@ -111,7 +133,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about none">
         <div class="container">
           <div class="about__title">
             <h2 class="title">We are Invoriem</h2>
@@ -141,7 +163,7 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer none">
         <div class="container">
           <div class="footer__row">
             <div class="footer_copyright">Copyright © 2020 Invoriem</div>

@@ -1,9 +1,13 @@
 @import "./reset.css";
 @import "./fonts/Gilroy/stylesheet.css";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
+  color: rgba(31, 31, 31, 0.7);
 }
 .none {
   display: none;
@@ -72,8 +76,17 @@ body {
 .btn--dark::after {
   background-image: url("../img/header/Arrow\ Right\ white.svg");
 }
+
+/* Header - mobile */
+
+.header__content-mobile {
+  display: none;
+}
+
 /* Header*/
+
 .header {
+  position: relative;
   min-height: 100vh;
   background-color: #e1eef2;
   background-image: url(../img/header/Group\ 83.jpg);
@@ -85,13 +98,20 @@ body {
   margin-bottom: 126px;
   padding: 44px 0;
 }
-
+.header__arrows {
+  position: absolute;
+  bottom: 59px;
+  left: 50%;
+  transition: translateX(-50%);
+}
 /* nav */
 .nav {
   display: flex;
   justify-content: space-between;
 }
-
+.nav__btn {
+  display: none;
+}
 .nav__list {
   display: flex;
   align-items: center;
@@ -117,6 +137,7 @@ body {
 .header__text {
   margin-bottom: 72px;
   font-size: 24px;
+  line-height: 1.57;
   font-weight: 400;
   color: #1f1f1f;
 }

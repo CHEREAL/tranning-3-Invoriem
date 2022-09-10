@@ -1,8 +1,30 @@
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-    dots: false,
-    margin: 48,
-    loop: true
+   
+    responsive : {
+    loop: true,
+      0 : {
+         items: 2,
+         margin: 32, 
+         dots: false,
+         loop: true,
+      },
+     
+      601 : {
+         items: 3,
+         margin: 32, 
+         loop: true,
+         dots: false,
+      },
+      1001 : {
+         items: 3,
+         margin: 48,
+         loop: true,
+         dots: false,
+      },
+     
+     
+  }
   });
 });
 
@@ -17,15 +39,32 @@ const video = document.querySelector('#video-file');
 videoWrapper.addEventListener ('click', function () {
   
   if (video.paused) {
-    videoPicture.classList.add('none');
+    videoPicture.classList.add('hidden');
 videoWrapper.classList.remove('video-overlay');
 videoBtn.classList.add('none');
     video.play();
   }
   else {
-    videoPicture.classList.add('none');
+   
     videoWrapper.classList.add('video-overlay');
     videoBtn.classList.remove('none');
   video.pause();
   }
-})
+});
+
+
+/* Mobile Nav */
+
+const openNavbtn = document.querySelector('#openMobileNav');
+const closeNavbtn = document.querySelector('#closeMobileNav');
+const mobileNav = document.querySelector('#mobileNav');
+
+openNavbtn.onclick = function () {
+    mobileNav.classList.remove('none')
+    document.body.classList.add('no-scroll');
+}
+
+closeNavbtn.onclick = function () {
+	mobileNav.classList.add('none');
+	document.body.classList.remove('no-scroll');
+};

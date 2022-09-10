@@ -10,6 +10,73 @@
     font-size: 24px;
     margin-bottom: 52px;
   }
+  /*nav */
+  .nav__list {
+    column-gap: 60px;
+  }
+
+  /* Slider*/
+  .slider {
+    width: 1300px;
+  }
+  .slide__img {
+    width: 336px;
+    height: 396px;
+  }
+  .slide {
+    padding-left: 50px;
+  }
+  .slide__title {
+    bottom: 32px;
+    font-style: 80px;
+    background: linear-gradient(
+      90deg,
+      rgba(17, 68, 85, 1) 50px,
+      rgba(255, 255, 255, 1) 50px
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title {
+    font-size: 60px;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+  .case-studies {
+    padding: 80px 0;
+  }
+
+  .case-studies__text {
+    margin-bottom: 50px;
+  }
+  /* About */
+  .about {
+    padding: 80px 0;
+  }
+  .about__text {
+    margin-bottom: 50px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding: 32px 0 32px;
+  }
+  .footer__row {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 32px;
+  }
+  .footer__nav {
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+  }
+  .footer a {
+    color: rgba(73, 42, 211, 0.7);
+  }
 }
 
 /* Mobile */
@@ -62,7 +129,7 @@
   /* Case */
   .case-studies {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   .case-studies__title {
     margin-bottom: 7px;
@@ -76,5 +143,58 @@
   .text {
     line-height: 24px;
     font-size: 16px;
+  }
+  .slider {
+    width: 546px;
+  }
+  .slide {
+    padding-left: 33px;
+  }
+  .slide__img {
+    width: 224px;
+    height: 264px;
+  }
+  .slide__title {
+    bottom: 22px;
+    font-size: 60px;
+    background: linear-gradient(
+      90deg,
+      rgba(17, 68, 85, 1) 33px,
+      rgba(255, 255, 255, 1) 33px
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /*About*/
+  .about {
+    padding: 40px 0 80px;
+  }
+  .about__title {
+    margin-bottom: 7px;
+  }
+  .about__text {
+    margin-bottom: 40px;
+  }
+
+  /* Video */
+  .video {
+    overflow: hidden;
+  }
+  .video__btn {
+    width: 48px;
+    height: 48px;
+  }
+  .video__picture,
+  .video__picture img {
+    width: 100%;
+  }
+  .video__object {
+    position: absolute;
+    left: -50%;
+    top: 0;
+    width: 900px;
+    height: 459px;
+    vertical-align: top;
   }
 }

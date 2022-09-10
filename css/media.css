@@ -179,6 +179,7 @@
 
   /* Video */
   .video {
+    height: 459px;
     overflow: hidden;
   }
   .video__btn {

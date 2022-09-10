@@ -253,6 +253,7 @@ body {
   z-index: 7;
   /* display: none; */
 }
+
 .video__object {
   position: absolute;
   left: 0;
